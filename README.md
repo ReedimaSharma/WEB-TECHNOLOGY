@@ -1,2 +1,3 @@
 # WEB-TECHNOLOGY
-for all the codes and practice of web technology
+For all the codes and practice of web technology
+Author - Reedima Sharma

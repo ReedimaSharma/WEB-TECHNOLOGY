@@ -1,22 +1,72 @@
-<!DOCTYPEhtml> 
+<!DOCTYPE html>
 <html>
     <head>
         <title> form </title>
     </head>
-    <body> 
-        <form>
-            <p> Enter your name : </p>
-            <input type = "text" placeholder = "enter name"> 
+    <body>
+        <h4> Registration Form</h4>
+        <form action = "/action.php">
+            <p> NAME : </p>
+            <input type = "text" placeholder = "Enter your name">
             <br>
-            <p> Enter your password </p>
-            <input type = "password" placeholder = "password">
             <br>
+            <p> PASSWORD : </p>
+            <input type = "password" placeholder = "enter your password" >
+            <br> <br>
+            <label for = "email"> EMAIL : </label>
+             <input type = "email" id = "email">
+            <br> <br>
+            <p> SELECT YOUR GENDER : </p>
+            <label for = "101">         
+            <input type = "radio" value = "Male" name = "gender" id = "101">Male
+            </label>
+            <br>
+            <label for = "102">         
+            <input type = "radio" value = "Female" name = "gender" id = "102">Female
+            </label>
+        <br> <br>
+        <p> SELECT YOUR CLASS : </p>
+         <label for = "2">
+            <input type = "radio" value = "Class XI" name = "class" id= "2">Class XI
+        </label>
+        <br>
+        <label for = "1">
+            <input type = "radio" value = "Class XII" name = "class" id= "1">Class XII
+        </label>
+        <br> <br>
+        <p> SELECT YOUR FAV SUBJECT : </p>
+        <label for = "200">
+            <input type = "checkbox" value = "Maths" name = "subject" id ="200">Maths
+        </label>
+        <br>
+<label for = "201">
+            <input type = "checkbox" value = "Science" name = "subject" id ="201">Science
+        </label>
+        <br>
+        <label for = "202">
+            <input type = "checkbox" value = "Social Science" name = "subject" id ="202">Social Science
+        </label>
+        <br>
+        <label for = "203">
+            <input type = "checkbox" value = "English" name = "subject" id ="203">English
+        </label>
+        <br> <br> 
+        <p> SELECT YOUR CITY : </p>
+        <select name = "city" id = "city">
+            <option value = "Delhi"> Delhi </option>
+            <option value = "Mumbai"> Mumbai </option>
+            <option value = "Jammu"> Jammu </option>
+            <option value = "Banglore"> Banglore </option>
+            <option value = "Bihar">Bihar</option>
+            <option value = "Kerala"> Kerala </option>
 
-            <label for = "email"> Email : </label>
-            <br>
-            <input type = "email" id = "email">
-            <button type = "submit"> Submit</button>
 
+        </select>
+        <br><br>
+
+        <textarea name = "feedback" id = "12" placeholder = "Help us with your feedback" rows = "4" cols="9"></textarea>
+        <br> <br>
+        <input type = "submit" value = "submit">
         </form>
     </body>
 </html>

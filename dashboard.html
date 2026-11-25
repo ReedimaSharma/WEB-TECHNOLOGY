@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Top Header Ribbon -->
+    <header class="headwrap">
+        <div class="logo-group">
+            <img style="height: 80px; width: 80px;" src="college.png" alt="College Logo">
+            <div class="student">
+                <h1>GCET, Jammu</h1>
+                <h3>Student Portal</h3>
+            </div>
+        </div>
+        <div class="studentinfo">
+            <h2>Reedima Sharma</h2>
+            <h3>Roll no: 2512019</h3>
+        </div>
+    </header>
+
+    <!-- Side-by-Side Flex Layout Workspace -->
+    <div class="main-body-wrapper">
+       
+        <!-- Left Side Dashboard Navigation Menu -->
+        <nav id="dash">
+            <ul>
+                <li><a href="dashboard.html" class="active">🏠 Dashboard</a></li>
+                <li><a href="myprofile.html">👤 My Profile</a></li>
+                <li><a href="mycourses.html">📜 My Courses</a></li>
+                <li><a href="myresults.html">📄 My Results</a></li>
+                <li><a href="noticeboard.html">🔔 Notice Board</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+                <li><a href="index.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+            </ul>
+        </nav>
+
+        <!-- Right Side Main Data View -->
+        <main class="content-workspace">
+            
+            <!-- Welcoming Student Banner Card -->
+            <div class="Welcome">
+                <h1>Welcome, Reedima Sharma 👋</h1>
+                <b>Roll no: 2512019 | Branch: CSE | Semester: 3rd</b>
+            </div>
+
+            <!-- Quick Stats Summary Cards Row -->
+            <section class="stats-grid">
+                <div class="card card-red">
+                    <span class="card-icon">📖</span>
+                    <h3>Total Courses</h3>
+                    <p class="stat-value">6</p>
+                </div>
+                <div class="card card-blue">
+                    <span class="card-icon">📈</span>
+                    <h3>Average Marks</h3>
+                    <p class="stat-value">78.5%</p>
+                </div>
+                <div class="card card-orange">
+                    <span class="card-icon">⭐</span>
+                    <h3>SGPA</h3>
+                    <p class="stat-value">8.2</p>
+                </div>
+                <div class="card card-green">
+                    <span class="card-icon">📅</span>
+                    <h3>Attendance</h3>
+                    <p class="stat-value">92%</p>
+                </div>
+            </section>
+
+            <!-- Bottom Data Split Section -->
+            <div class="details-grid">
+                
+                <!-- Personal Information Panel -->
+                <div class="info-panel">
+                    <h2>👤 Personal Information</h2>
+                    <div class="info-list">
+                        <div class="info-row"><span class="label">Name:</span> <span class="value">Reedima Sharma</span></div>
+                        <div class="info-row"><span class="label">Roll No.:</span> <span class="value">2512019</span></div>
+                        <div class="info-row"><span class="label">Branch:</span> <span class="value">Computer Science & Engineering</span></div>
+                        <div class="info-row"><span class="label">Semester:</span> <span class="value">3rd</span></div>
+                        <div class="info-row"><span class="label">Email:</span> <span class="value">reedima2512019@gcetjammu.ac.in</span></div>
+                        <div class="info-row"><span class="label">Phone:</span> <span class="value">+91 94191XXXXX</span></div>
+                    </div>
+                    <button class="btn-profile">View Full Profile</button>
+                </div>
+
+                <!-- Recent Notices Panel -->
+                <div class="notice-panel">
+                    <h2>🔔 Recent Notices</h2>
+                    <ul class="notice-list">
+                        <li>
+                            <strong>Mid Term Examination Schedule</strong>
+                            <span class="notice-date">10 Sep 2026</span>
+                        </li>
+                        <li>
+                            <strong>Project Submission Guidelines</strong>
+                            <span class="notice-date">05 Sep 2026</span>
+                        </li>
+                        <li>
+                            <strong>Holiday Notice</strong>
+                            <span class="notice-date">01 Sep 2026</span>
+                        </li>
+                        <li>
+                            <strong>Placement Drive Registration</strong>
+                            <span class="notice-date">28 Aug 2026</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

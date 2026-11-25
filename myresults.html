@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Results - Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Uniform Navbar -->
+    <div class="navbar">
+        <div class="logo-section">
+            <img src="college.png" alt="GCET Logo">
+            <div>
+                <h3>GCET, Jammu</h3>
+                <small>Student Portal</small>
+            </div>
+        </div>
+        <div class="user-profile-header">
+            <h4>Reedima Sharma</h4>
+            <small>Roll no: 2512019</small>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <ul>
+              <li><a href="dashboard.html" class="active">🏠 Dashboard</a></li>
+                <li><a href="myprofile.html">👤 My Profile</a></li>
+                <li><a href="mycourses.html">📜 My Courses</a></li>
+                <li><a href="myresults.html">📄 My Results</a></li>
+                <li><a href="noticeboard.html">🔔 Notice Board</a></li>
+                <li><a href="settings.html">⚙️ Settings</a></li>
+                <li><a href="logout.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Layout Body -->
+        <div class="main-content">
+            <div class="card">
+                <h2>Semester Results Summary</h2>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Semester</th>
+                            <th>SGPA Obtained</th>
+                            <th>Percentage Equivalent</th>
+                            <th>Result Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>1st Semester</strong></td>
+                            <td>7.9</td>
+                            <td>71.89%</td>
+                            <td><span class="status-badge pass">PASSED</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>2nd Semester</strong></td>
+                            <td>8.2</td>
+                            <td>77.9%</td>
+                            <td><span class="status-badge pass">PASSED</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Bottom CGPA Overview Panel Box -->
+                <div style="margin-top: 30px; background: #f8f9fa; padding: 15px; border-radius: 6px; border-left: 5px solid #e6cc00;">
+                    <p style="font-size: 16px;"><strong>Cumulative CGPA:</strong> 8.30</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

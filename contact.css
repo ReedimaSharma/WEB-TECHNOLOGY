@@ -1,0 +1,139 @@
+/* General Layout & Fonts */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+/* Main Container Grid */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* Titles */
+h2 {
+  font-size: 1.3rem;
+  color: #003366;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 5px;
+}
+
+/* Contact Details */
+.info-section {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 6px;
+  border: 1px solid #dddddd;
+}
+
+.info-item {
+  margin-bottom: 18px;
+}
+
+.info-item strong {
+  display: block;
+  color: #111;
+  margin-bottom: 3px;
+}
+
+/* Form Styles */
+.form-section {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 6px;
+  border: 1px solid #dddddd;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #003366;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background-color: #003366;
+  color: white;
+}
+
+.btn-submit:hover {
+  background-color: #002244;
+}
+
+.btn-reset {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.btn-reset:hover {
+  background-color: #cccccc;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 650px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "admission.css">
+        
+    </head>
+    <body>
+         <header class="container">
+        <img src="college.png" height="100px" width="100px">
+        <h1 class="top">GOVERNMENT COLLEGE OF ENGINEERING & TECHNOLOGY JAMMU</h1>
+    </header>
+
+    <div class="features">
+        <div id="box">
+            <a href="home.html" id="box 1">Home</a>
+            <a href="about.html" id="box 2">About</a>
+            <a href="faculty.html" id="box 3">Faculty</a>
+            <a href="student.html" id="box 4">Students</a>
+            <a href="gallery.html" id="box 5">Gallery</a>
+            <a href="admission.html" id="box 6">Admission</a>
+            <a href="contact.html" id="box 7">Contact</a>
+        </div>
+        
+         <h1 id ="heading"><b><u>Registration Form </u></b></h1>
+        <div id = "form">
+        <form action = "thanks.html" method = "get">
+            <p> ENTER YOUR NAME : </p>
+            <input type = "text" placeholder = "Name" required>
+            <br>
+            <br>
+            <p>SET YOUR PASSWORD : </p>
+            <input type = "password" placeholder = " Password" required >
+            <br> <br>
+            <label for = "email"> EMAIL : </label>
+             <input type = "email" id = "email" required>
+            <br> <br>
+            <br> <br>
+            <p> SELECT YOUR GENDER : </p>
+            <label for = "101" required>         
+            <input type = "radio" value = "Male" name = "gender" id = "101">Male
+            </label>
+            <br>
+            
+            <label for = "102" required>         
+            <input type = "radio" value = "Female" name = "gender" id = "102">Female
+            </label>
+            <p> MOBILE NUMBER : </p>
+            <input type = "number" placeholder = "Enter your contact number " required>
+            <br> 
+            <label for = "dob"> Date of birth : </label>
+            <input type = "date" id = "dob" name = "dob" required> 
+        <br> <br>
+        
+        <p> Enter your address : </p>
+       <textarea name = "Addresss" id = "12" placeholder = "Enter your Address : " rows = "7" cols="17" required></textarea>
+        <br> <br>
+        <br> <br> 
+        <p> SELECT YOUR COURSE  : </p>
+        <select name = "course" id = "course" required>
+            <option value = "Computer science  "> Computer science </option>
+            <option value = "Civil engg "> Civil engg </option>
+            <option value = "Mechanical engg"> Mechanical engg </option>
+            <option value = "Electrical Engg "> Electrical Engg </option>
+            <option value = "E&C ">E&C</option>
+            
+        </select>
+        <br><br>
+        <hr>
+        <br> 
+      <button type="reset" class="reset-btn">Reset</button>
+      <hr>
+      <br> <br> 
+        <textarea name = "feedback" id = "12" placeholder = "Help us with your feedback" rows = "9" cols="20"></textarea>
+        <br> <br>
+        <input type = "submit" value = "submit">
+        </form>
+        </div>
+        <footer>
+        <p>&copy; 2026 GCET JAMMU | Web Technology Lab</p>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+.logo {
+    background-image: url("college.png");
+    background-size: contain;
+background-repeat: no-repeat;
+    height:100px;
+    width:100px;
+    position: fixed;
+    top: 150px;
+    left:700px;
+    
+}
+.login {
+    border:2px solid black;
+    height: fit-content;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    top:320px;
+    left:700px;
+}
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: maroon;
+    position: fixed;
+     top: 200px;
+    left:600px;
+}
+body {
+    background-image: url("photo2.png") ;
+     background-size: cover;
+
+}

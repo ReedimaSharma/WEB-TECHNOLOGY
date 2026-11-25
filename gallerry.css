@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header container: Logo left me, Heading center me */
+header.container {
+    display: flex;
+    align-items: center;
+    background-color: crimson;
+    padding: 10px 20px;
+}
+
+header.container img {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+h1.top {
+    flex-grow: 1;
+    text-align: center;
+    color: bisque;
+    margin: 0;
+    font-size: 24px;
+    background-color: crimson;
+}
+
+/* Nav Bar: Heading aur Logo ke theek niche bina kisi overlap ke */
+#box {
+    display: flex;
+    background-color: cornflowerblue;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    color: white;
+    font-size: 20px;
+}
+#heading {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: blue;
+    
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+     position: fixed; 
+    bottom: 0; 
+    width: 100%;
+}
+.clg {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly; 
+     flex-wrap: wrap; 
+     padding: 20px;
+    height:300px;
+    width: 100%;
+}
+.clg img {
+    width: 30%;
+    margin-bottom: 20px;
+}

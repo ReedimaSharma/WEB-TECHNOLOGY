@@ -1,0 +1,68 @@
+a {
+    color : white;
+    display : inline;
+    margin : 0px;
+    font-size: 25px ;
+
+     
+}
+
+.top {
+    text-align: center;
+    position: fixed;
+    top:0px;
+    left:0px;
+
+}
+#box  {
+    position: fixed;
+    top:50;
+    left:50;
+    display: flex;
+    background-color : maroon;
+    z-index: 1000;
+    height : 60px ;
+    width:100%;
+    margin-right : 0px;
+    margin-left : 0px;
+    padding : 0px; 
+    align-items : center;
+    justify-content : space-around;
+     
+}
+#image {
+     display : flex;
+    position : fixed;
+    top:0px;
+    left:0px;
+    bottom : 100px;
+    height:100px;
+    width:100px;
+}
+#image2{
+    background-image: url("photo3.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    height: 600px; 
+    width : 100%;
+
+}
+body {
+    padding-top: 70px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#login {
+    color: black;
+    background-color: crimson;
+}

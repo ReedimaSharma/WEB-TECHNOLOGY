@@ -1,0 +1,63 @@
+#box {
+    display: flex;
+    background-color: cornflowerblue;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+    color : white;
+    display : inline;
+    margin : 0px;
+    font-size: 20px ;
+
+     
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header container: Logo left me, Heading center me */
+header.container {
+    display: flex;
+    align-items: center;
+    background-color: crimson;
+    padding: 10px 20px;
+}
+
+header.container img {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#img {
+    float:left;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    max-width: fit-content;
+    position: relative;
+    top:30px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h1.top {
+    flex-grow: 1;
+    text-align: center;
+    color: bisque;
+    margin: 0;
+    font-size: 24px;
+    background-color: crimson;
+}

@@ -1,0 +1,81 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header container: Logo left me, Heading center me */
+header.container {
+    display: flex;
+    align-items: center;
+
+    background-color: crimson;
+    padding: 10px 20px;
+
+}
+
+
+header.container img {
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* Navigation Bar: Logo aur Heading ke theek niche */
+#box {
+    display: flex;
+    background-color: cornflowerblue;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#box a {
+    color: white;
+    font-size: 20px;
+   
+}
+
+#box a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    display: inline-block;
+    background-color: goldenrod;
+    color: brown;
+    width: 250px;
+    padding: 20px;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #4a154b;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+h1.top {
+    flex-grow: 1;
+    text-align: center;
+    color: bisque;
+    margin: 0;
+    font-size: 24px;
+    background-color: crimson;
+}

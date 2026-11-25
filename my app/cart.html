@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - DrishyaLuxe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>DrishyaLuxe</span>
+        </div>
+
+        <div class="header-icons">
+            <a href="products.html">Continue Shopping</a>
+
+            <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main class="cart-page">
+        <h1>Your Shopping Cart</h1>
+        <p>Review your selected products before checkout.</p>
+
+        <div class="cart-layout">
+
+            <section class="cart-items-section">
+                <div id="cart-items" class="cart-items">
+                    <!-- JavaScript displays cart products here -->
+                </div>
+
+                <p id="empty-cart-message" hidden>
+                    Your cart is empty. Start shopping to add products!
+                </p>
+
+                <a href="products.html" class="shop-btn">
+                    Continue Shopping
+                </a>
+                <button id="theme-toggle" >
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            </section>
+
+            <aside class="cart-summary">
+                <h2>Order Summary</h2>
+
+                <div class="cart-summary-row">
+                    <span>Items</span>
+                    <span id="cart-total-items">0</span>
+                </div>
+
+                <div class="cart-summary-row">
+                    <span>Total</span>
+                    <strong id="cart-total-price">₹0</strong>
+                </div>
+
+                <button
+  id="checkout-btn"
+  type="button"
+  onclick="window.location.href='checkout.html'"
+>
+  Proceed to Checkout
+</button>
+
+                <p class="cart-note">
+                    Checkout is a demo and does not process payments.
+                </p>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 DrishyaLuxe. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

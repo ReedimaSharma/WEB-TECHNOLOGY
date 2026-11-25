@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - DrishyaLuxe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>DrishyaLuxe</span>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search for products..."
+                aria-label="Search products"
+            >
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+        </div>
+
+        <div class="header-icons">
+            <a href="wishlist.html" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+                <span id="wishlist-count">0</span>
+            </a>
+
+            <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+
+            <button type="button" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Products Banner -->
+    <section class="products-banner">
+        <h1>Our Products</h1>
+        <p>Discover your favourites at amazing prices.</p>
+    </section>
+
+    <!-- Products Page -->
+    <main class="products-page">
+
+        <!-- Filters -->
+        <aside class="filter-sidebar">
+            <h2>Filters</h2>
+
+            <div class="filter-group">
+                <h3>Categories</h3>
+
+                <label>
+                    <input type="checkbox" name="category" value="electronics">
+                    Electronics
+                </label>
+
+                <label>
+                    <input type="checkbox" name="category" value="clothing">
+                    Clothing
+                </label>
+
+                <label>
+                    <input type="checkbox" name="category" value="accessories">
+                    Accessories
+                </label>
+
+                <label>
+                    <input type="checkbox" name="category" value="footwear">
+                    Footwear
+                </label>
+            </div>
+
+            <div class="filter-group">
+                <h3>Price Range</h3>
+
+                <label>
+                    <input type="radio" name="price" value="under-500">
+                    Under ₹500
+                </label>
+
+                <label>
+                    <input type="radio" name="price" value="500-1500">
+                    ₹500 - ₹1,500
+                </label>
+
+                <label>
+                    <input type="radio" name="price" value="1500-3000">
+                    ₹1,500 - ₹3,000
+                </label>
+
+                <label>
+                    <input type="radio" name="price" value="above-3000">
+                    Above ₹3,000
+                </label>
+
+                <button type="button" id="clear-filters">
+                    Clear Filters
+                </button>
+            </div>
+        </aside>
+
+        <!-- Product Listing -->
+        <section class="product-listing">
+
+            <div class="listing-heading">
+                <h2>All Products</h2>
+
+                <select id="sort-select" aria-label="Sort products">
+                    <option value="recommended">Sort by: Recommended</option>
+                    <option value="Price: Low to High">Price: Low to High</option>
+                    <option value="Price: High to Low">Price: High to Low</option>
+                    <option value="newest">Newest First</option>
+                </select>
+            </div>
+
+            <div class="listing-grid">
+
+                <!-- Product 1: Sports Shoes -->
+                <div class="product-card"
+                     data-product-id="sports-shoes"
+                     data-category="footwear"
+                     data-price="1499">
+
+                    <button type="button"
+                            class="wishlist-btn"
+                            data-product-id="sports-shoes"
+                            aria-label="Add Sports Shoes to wishlist"
+                            aria-pressed="false">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80"
+                        alt="Red sports shoes"
+                    >
+
+                    <h3>Sports Shoes</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,499</p>
+
+                    <button type="button"
+                            class="cart-btn add-to-cart"
+                            data-product-id="sports-shoes"
+                            data-price="1499">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 2: Classic Watch -->
+                <div class="product-card"
+                     data-product-id="classic-watch"
+                     data-category="accessories"
+                     data-price="2199">
+
+                    <button type="button"
+                            class="wishlist-btn"
+                            data-product-id="classic-watch"
+                            aria-label="Add Classic Watch to wishlist"
+                            aria-pressed="false">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80"
+                        alt="Classic wristwatch"
+                    >
+
+                    <h3>Classic Watch</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹2,199</p>
+
+                    <button type="button"
+                            class="cart-btn add-to-cart"
+                            data-product-id="classic-watch"
+                            data-price="2199">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 3: Wireless Headphones -->
+                <div class="product-card"
+                     data-product-id="wireless-headphones"
+                     data-category="electronics"
+                     data-price="1899">
+
+                    <button type="button"
+                            class="wishlist-btn"
+                            data-product-id="wireless-headphones"
+                            aria-label="Add Wireless Headphones to wishlist"
+                            aria-pressed="false">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80"
+                        alt="Wireless headphones"
+                    >
+
+                    <h3>Wireless Headphones</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹1,899</p>
+
+                    <button type="button"
+                            class="cart-btn add-to-cart"
+                            data-product-id="wireless-headphones"
+                            data-price="1899">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 4: Fashion Handbag -->
+                <div class="product-card"
+                     data-product-id="fashion-handbag"
+                     data-category="accessories"
+                     data-price="1299">
+
+                    <button type="button"
+                            class="wishlist-btn"
+                            data-product-id="fashion-handbag"
+                            aria-label="Add Fashion Handbag to wishlist"
+                            aria-pressed="false">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=500&q=80"
+                        alt="Fashion handbag"
+                    >
+
+                    <h3>Fashion Handbag</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹1,299</p>
+
+                    <button type="button"
+                            class="cart-btn add-to-cart"
+                            data-product-id="fashion-handbag"
+                            data-price="1299">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 5: Digital Camera -->
+                <div class="product-card"
+                     data-product-id="digital-camera"
+                     data-category="electronics"
+                     data-price="4999">
+
+                    <button type="button"
+                            class="wishlist-btn"
+                            data-product-id="digital-camera"
+                            aria-label="Add Digital Camera to wishlist"
+                            aria-pressed="false">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=80"
+                        alt="Digital camera"
+                    >
+
+                    <h3>Digital Camera</h3>
+                    <p class="rating">★★★★★</p>
+                    <p class="price">₹4,999</p>
+
+                    <button type="button"
+                            class="cart-btn add-to-cart"
+                            data-product-id="digital-camera"
+                            data-price="4999">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <!-- Product 6: Casual T-Shirt -->
+                <div class="product-card"
+                     data-product-id="casual-tshirt"
+                     data-category="clothing"
+                     data-price="699">
+
+                    <button type="button"
+                            class="wishlist-btn"
+                            data-product-id="casual-tshirt"
+                            aria-label="Add Casual T-Shirt to wishlist"
+                            aria-pressed="false">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80"
+                        alt="Casual T-shirt"
+                    >
+
+                    <h3>Casual T-Shirt</h3>
+                    <p class="rating">★★★★☆</p>
+                    <p class="price">₹699</p>
+
+                    <button type="button"
+                            class="cart-btn add-to-cart"
+                            data-product-id="casual-tshirt"
+                            data-price="699">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+            <p id="no-products-message" hidden>
+                No products found. Try changing your filters.
+            </p>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-bottom">
+            <p>&copy; 2026 DrishyaLuxe. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

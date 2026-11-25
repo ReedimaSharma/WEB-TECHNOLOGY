@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - DrishyaLuxe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>DrishyaLuxe</span>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search for products..."
+                aria-label="Search products"
+            >
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+        </div>
+
+        <div class="header-icons">
+            <a href="wishlist.html" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+                <span id="wishlist-count">0</span>
+            </a>
+
+            <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+
+            <button type="button" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover<br>Trendy Products<br>For a Better You</h1>
+
+            <p>
+                Latest collections, best prices and amazing offers
+                only at ShopEase.
+            </p>
+
+            <a href="products.html" class="shop-btn">Shop Now</a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4C-XsDAuLydkklwXeYStUgdRFEJlTt9U7KuSj4A21kA&s=10"
+                alt="Woman shopping for fashion products">
+        </div>
+    </section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+
+    <div class="benefit">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div>
+            <h3>Free Shipping</h3>
+            <p>On eligible orders</p>
+        </div>
+    </div>
+
+    <div class="benefit">
+        <i class="fa-solid fa-shield-halved"></i>
+        <div>
+            <h3>Secure Payment</h3>
+            <p>Safe and secure checkout</p>
+        </div>
+    </div>
+
+    <div class="benefit">
+        <i class="fa-solid fa-rotate-left"></i>
+        <div>
+            <h3>Easy Returns</h3>
+            <p>Hassle-free returns</p>
+        </div>
+    </div>
+
+    <div class="benefit">
+        <i class="fa-solid fa-headset"></i>
+        <div>
+            <h3>24/7 Support</h3>
+            <p>Here to help you</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- Featured Products Section -->
+<section class="featured-products">
+
+    <div class="section-heading">
+        <h2>Featured Products</h2>
+        <p>Discover our most popular products</p>
+    </div>
+
+    <div class="product-container">
+
+        
+<!-- Product 1 -->
+<div class="product-card"
+     data-product-id="sports-shoes"
+     data-category="footwear"
+     data-price="1499">
+
+    <button type="button" class="wishlist-btn" aria-label="Add to wishlist">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80"
+         alt="Red sports shoes">
+
+    <h3>Sports Shoes</h3>
+    <p class="rating">★★★★★</p>
+    <p class="price">₹1,499</p>
+
+    <button type="button" class="cart-btn add-to-cart">Add to Cart</button>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card"
+     data-product-id="classic-watch"
+     data-category="accessories"
+     data-price="2199">
+
+    <button type="button" class="wishlist-btn" aria-label="Add to wishlist">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80"
+         alt="Classic wrist watch">
+
+    <h3>Classic Watch</h3>
+    <p class="rating">★★★★★</p>
+    <p class="price">₹2,199</p>
+
+    <button type="button" class="cart-btn add-to-cart">Add to Cart</button>
+</div>
+
+<!-- Product 3 -->
+<div class="product-card"
+     data-product-id="wireless-headphones"
+     data-category="electronics"
+     data-price="1899">
+
+    <button type="button" class="wishlist-btn" aria-label="Add to wishlist">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80"
+         alt="Wireless headphones">
+
+    <h3>Wireless Headphones</h3>
+    <p class="rating">★★★★☆</p>
+    <p class="price">₹1,899</p>
+
+    <button type="button" class="cart-btn add-to-cart">Add to Cart</button>
+</div>
+
+<!-- Product 4 -->
+<div class="product-card"
+     data-product-id="fashion-handbag"
+     data-category="accessories"
+     data-price="1299">
+
+    <button type="button" class="wishlist-btn" aria-label="Add to wishlist">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=500&q=80"
+         alt="Fashion handbag">
+
+    <h3>Fashion Handbag</h3>
+    <p class="rating">★★★★★</p>
+    <p class="price">₹1,299</p>
+
+    <button type="button" class="cart-btn add-to-cart">Add to Cart</button>
+</div>
+
+    </div>
+
+
+<!-- Shop by Category Section -->
+<section class="categories" id="categories">
+
+    <div class="section-heading">
+        <h2>Shop by Category</h2>
+        <p>Find the products you love</p>
+    </div>
+
+    <div class="category-container">
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=500&q=80" alt="Electronic devices">
+            <h3>Electronics</h3>
+            <a href="products.html">Explore Now</a>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=500&q=80" alt="Fashion clothing">
+            <h3>Clothing</h3>
+            <a href="products.html">Explore Now</a>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=500&q=80" alt="Fashion accessories">
+            <h3>Accessories</h3>
+            <a href="products.html">Explore Now</a>
+        </div>
+
+        <div class="category-card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Sports footwear">
+            <h3>Footwear</h3>
+            <a href="products.html">Explore Now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Special Offers Section -->
+<section class="special-offer">
+
+    <div class="offer-content">
+        <p class="offer-label">LIMITED TIME OFFER</p>
+
+        <h2>Upgrade Your Style Today!</h2>
+
+        <p>Get up to 40% off on selected products.</p>
+
+        <a href="products.html" class="offer-btn">Shop Now</a>
+    </div>
+
+    <div class="offer-image">
+        <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=700&q=80"
+            alt="Fashion store with clothing collection">
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- About -->
+        <div class="footer-column">
+            <h2>ShopEase</h2>
+            <p>Your one-stop destination for trendy products
+               at amazing prices.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <!-- Customer Support -->
+        <div class="footer-column">
+            <h3>Customer Support</h3>
+            <a href="#">FAQs</a>
+            <a href="#">Shipping Policy</a>
+            <a href="#">Return Policy</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column">
+            <h3>Subscribe to Us</h3>
+            <p>Get updates about new products and offers.</p>
+
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="button">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Reedi Luxe. All rights reserved.</p>
+    </div>
+
+</footer>
+
+
+
+
+
+
+    <!-- JavaScript file -->
+    
+
+</body>
+</html>

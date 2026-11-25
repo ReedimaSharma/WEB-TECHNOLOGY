@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - DrishyaLuxe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>DrishyaLuxe</span>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search for products..."
+                aria-label="Search products"
+            >
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+        </div>
+
+        <div class="header-icons">
+            <a href="wishlist.html" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+                <span id="wishlist-count">0</span>
+            </a>
+
+            <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+
+            <button type="button" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="index.html#categories">Categories</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+
+    <!-- About Banner -->
+    <section class="about-banner">
+        <h1>About ShopEase</h1>
+        <p>Your shopping experience, made simple.</p>
+    </section>
+
+    <!-- Our Story -->
+    <section class="about-story">
+
+        <div class="story-image">
+            <img
+                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80"
+                alt="Inside a clothing store">
+        </div>
+
+        <div class="story-content">
+            <h2>Our Story</h2>
+
+            <p>
+                Welcome to ShopEase, your destination for quality
+                products at great prices.
+            </p>
+
+            <p>
+                We created ShopEase to make online shopping simple,
+                convenient, and enjoyable. From everyday essentials
+                to the latest trends, we bring a variety of products
+                together in one place.
+            </p>
+
+            <p>
+                Our goal is to help every customer find products
+                they love without making shopping complicated.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Mission and Vision -->
+    <section class="mission-vision">
+
+        <div class="mission-card">
+            <i class="fa-solid fa-bullseye"></i>
+            <h2>Our Mission</h2>
+            <p>
+                To provide a convenient shopping experience with
+                quality products, fair prices, and customer-focused service.
+            </p>
+        </div>
+
+        <div class="mission-card">
+            <i class="fa-solid fa-eye"></i>
+            <h2>Our Vision</h2>
+            <p>
+                To become a trusted shopping destination where customers
+                can discover products they need with confidence.
+            </p>
+        </div>
+
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+
+        <div class="section-heading">
+            <h2>Why Choose DRISHYA LUXE?</h2>
+            <p>We make every shopping experience count.</p>
+        </div>
+
+        <div class="about-benefits">
+
+            <div class="about-benefit">
+                <i class="fa-solid fa-tags"></i>
+                <h3>Great Prices</h3>
+                <p>Find great value across our product collection.</p>
+            </div>
+
+            <div class="about-benefit">
+                <i class="fa-solid fa-box-open"></i>
+                <h3>Quality Products</h3>
+                <p>Explore products selected for everyday needs.</p>
+            </div>
+
+            <div class="about-benefit">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Easy Shopping</h3>
+                <p>Browse and discover products in one convenient place.</p>
+            </div>
+
+            <div class="about-benefit">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Customer Support</h3>
+                <p>We're here to help with your shopping questions.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Call to Action -->
+    <section class="about-cta">
+        <h2>Ready to Start Shopping?</h2>
+        <p>Explore our collection and discover something you love.</p>
+        <a href="products.html" class="shop-btn">Explore Products</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h2>ShopEase</h2>
+                <p>Your one-stop destination for trendy products
+                   at amazing prices.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Customer Support</h3>
+                <a href="#">FAQs</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>Subscribe to Us</h3>
+                <p>Get updates about new products and offers.</p>
+
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="button">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Drishya Luxe. All rights reserved.</p>
+        </div>
+
+    </footer>
+    
+
+
+</body>
+</html>

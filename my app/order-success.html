@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed | DrishyaLuxe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <main class="order-success">
+    <div class="success-icon">✓</div>
+    <h1>Thank You for Your Order!</h1>
+    <p>Your order has been placed successfully.</p>
+
+    <h3 id="order-number"></h3>
+    <div id="order-details"></div>
+
+    <a href="products.html" class="continue-shopping">
+      Continue Shopping
+    </a>
+    <button id="theme-toggle" >
+                <i class="fa-solid fa-moon"></i>
+            </button>
+  </main>
+
+  <script>
+    const order = JSON.parse(
+      localStorage.getItem("drishyaLuxeLastOrder") || "null"
+    );
+
+    const details = document.getElementById("order-details");
+
+    if (order) {
+      document.getElementById("order-number").textContent =
+        "Order ID: " + order.id;
+
+      const customer = document.createElement("p");
+      customer.textContent = "Customer: " + order.customer;
+      details.appendChild(customer);
+
+      const total = document.createElement("p");
+      total.textContent =
+        "Order Total: ₹" + order.total.toLocaleString("en-IN");
+      details.appendChild(total);
+
+      order.items.forEach(item => {
+        const row = document.createElement("p");
+        row.textContent =
+          `${item.name} × ${item.quantity}`;
+        details.appendChild(row);
+      });
+    } else {
+      document.getElementById("order-number").textContent =
+        "No order details found.";
+    }
+  </script>
+  <script src="script.js" defer></script>
+</body>
+</html>
